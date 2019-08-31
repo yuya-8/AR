@@ -13,7 +13,7 @@
 
     <body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
         <!-- ARオブジェクトを描画するシーンの定義 -->
-        <a-scene stats embedded arjs='debugUIEnabled: false; sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 240; canvasHeight: 180'>
+        <a-scene stats embedded arjs='debugUIEnabled: false; sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 240; canvasHeight: 180; patternRatio=0.90'>
             <!-- ARマーカに対する描画オブジェクト -->
             <a-marker type="pattern" url="./pattern-marker.patt">
                 <!-- オブジェクト1つめの配置 -->
@@ -30,7 +30,7 @@
                 </a-sphere>
               </a-marker>
             
-            <a-marker type="pattern" url="./ebi_2.patt">
+            <a-marker type="pattern" url="./pattern-ebi_3.patt">
                 <a-sphere scale=".25 .25 .25" position="0 .5 0" color="#1f1">
                   <a-animation attribute="position" to="0 1 0" direction="alternate" dur="2000" repeat="indefinite">
                   </a-animation>
